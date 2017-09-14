@@ -1,0 +1,48 @@
+.window_big {
+    width:65%;
+    position: fixed;
+    top:50%;
+    left:25%;
+}
+
+.window_small {
+    width:15%;
+    position: fixed;
+    top:50%;
+    left:40%;
+    min-width:75px;
+}
+
+/* Style the links inside the navigation bar */
+.window_big a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    margin-right:7%;
+    margin-left: 8%;
+    top:50%;
+    border-bottom: solid 1px transparent;
+
+}
+
+.window_small a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    margin-bottom:10%;
+    margin-top: 8%;
+    border-bottom: solid 1px transparent;
+}
+.window_big a:hover {
+    transition: border-bottom-color .2s ease-in;
+    border-bottom: solid 1px black;
+}
+.window_small a:hover {
+    transition: border-bottom-color .2s ease-in;
+    border-bottom: solid 1px black;
+}
