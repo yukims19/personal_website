@@ -1,7 +1,7 @@
 .window_big {
     width:100%;
     position: fixed;
-    top:7%;
+    top:70px;
     left: 3%;
     max-width: 760px;
 }
@@ -9,7 +9,7 @@
 .window_small {
     width:100%;
     position: fixed;
-    top:7%;
+    top:70px;
     left:3%;
     min-width:75px;
 }
@@ -23,6 +23,10 @@
     width:80px;
     height:80px;
     margin-top:-40px;
+    opacity:0.2;
+    animation: 0.5s fadein;
+    animation-delay: 1.5s;
+    animation-fill-mode:forwards;
 }
 .window_big a {
     float: left;
@@ -33,6 +37,7 @@
     font-size: 23px;
     padding-left: 5px;
     padding-right: 5px;
+
     margin-right:5%;
     border-bottom: solid 1px transparent;
     font-family: lucida grande;
@@ -68,41 +73,121 @@
 /*style for the step animation*/
 .steps{
     position:relative;
-    top:25%;
+    top:170px;
     width:100%;
+ //   animation: 0.5 ease-out 2s fadeout;
+  //  animation-fill-mode: forwards;
 }
 .steps p{
     font-size:18px;
     position:relative;
     width:40%;
-    margin-top:2%;
+    margin-top:16px;
     font-family:sans-serif;
-}
+  }
 #s0{
-    left:20%;
+    padding-left:200px;
     text-shadow: 5px 5px 15px #fe0000, -5px -5px 15px #fe0000;
+    animation:1.5s s0;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 #s1{
-    left:29%;
+    padding-left:300px;
     text-shadow: 5px 5px 15px #f09600, -5px -5px 15px #f09600;
+    animation:1.5s s1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 #s2{
-    left:40%;
+    padding-left:400px;
     text-shadow: 5px 5px 15px #55c149, -5px -5px 15px #55c149;
+    animation:1.5s s2;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 #s3{
-    left:50%;
+    padding-left:500px;
     text-shadow: 5px 5px 15px #00b1f3, -5px -5px 15px #00b1f3;
+    animation:1.5s s3;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
-
+@keyframes s0{
+    60%{transform: scale(1)}
+    75%{transform: scale(1.5)}
+    90%{transform: scale(1);
+        opacity:1}
+    100%{opacity: 0}
+}
+@keyframes s1{
+    35%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    65%{transform: scale(1)}
+    90%{opacity: 1}
+    100%{opacity: 0}
+}
+@keyframes s2{
+    10%{transform: scale(1)}
+    25%{transform: scale(1.5)}
+    40%{transform: scale(1)}
+    90%{opacity: 1}
+    100%{opacity: 0}
+}
+@keyframes s3{
+    10%{transform: scale(1.5)}
+    25%{transform: scale(1)}
+    90%{opacity: 1}
+    100%{opacity: 0}
+}
 /*style for first intro*/
 .intro{
     position:fixed;
-    top:15%;
+    top:140px;
     width:100%;
     height:70%;
     background-color: rgba(214, 209, 145, 0.27);
 }
+
+.ball{
+    height:40px;
+    width: 40px;
+    position: absolute;
+    top: 260px;
+    left: 540px;
+    animation:1.5s bounce cubic-bezier(0.38, 0.36, 0.51, 0.58);;
+    animation-fill-mode: forwards;
+}
+
+/*keyframes*/
+@keyframes fadein {
+    from { opacity: 0.2; }
+    to   { opacity: 1; }
+}
+@keyframes fadeout{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes bounce{
+    0%{transform: translateY(0);}
+    13%{transform: translate(-50px,-70px)}
+    25%{transform: translate(-100px,-35px)}
+    38%{transform: translate(-160px,-110px)}
+    50%{transform: translate(-220px,-75px)}
+    63%{transform: translate(-275px,-170px)}
+    75%{transform: translate(-330px,-115px)}
+    88%{transform: translate(-390px,-150px);
+        opacity: 1;}
+    100%{transform: translate(-450px,-200px);
+                             opacity: 0;}
+}
+
+@keyframes zoomout{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    100%{transform: scale(1)}
+}
+
 /*
 .bigicon{
     position:relative;
@@ -153,8 +238,3 @@ p#s3{
     font-weight: 900;
 }
 */
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
