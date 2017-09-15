@@ -1,19 +1,29 @@
 .window_big {
-    width:65%;
+    width:100%;
     position: fixed;
-    top:50%;
-    left:25%;
+    top:7%;
+    left: 3%;
+    max-width: 760px;
 }
 
 .window_small {
-    width:15%;
+    width:100%;
     position: fixed;
-    top:50%;
-    left:40%;
+    top:7%;
+    left:3%;
     min-width:75px;
 }
 
 /* Style the links inside the navigation bar */
+.home{
+    margin-right:7%;
+    border-bottom:none;
+}
+.icon{
+    width:80px;
+    height:80px;
+    margin-top:-40px;
+}
 .window_big a {
     float: left;
     display: block;
@@ -21,28 +31,130 @@
     text-align: center;
     text-decoration: none;
     font-size: 23px;
-    margin-right:7%;
-    margin-left: 8%;
-    top:50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right:5%;
     border-bottom: solid 1px transparent;
+    font-family: lucida grande;
 
 }
 
 .window_small a {
-    display: block;
+/*    display: block;
     color: black;
     text-align: center;
     text-decoration: none;
     font-size: 23px;
     margin-bottom:10%;
     margin-top: 8%;
-    border-bottom: solid 1px transparent;
+    border-bottom: solid 1px transparent;*/
+    visibility: hidden;
 }
-.window_big a:hover {
+.window_small > .home{
+    visibility: visible;
+}
+.menu{
+    float: right;
+    margin-top:-25px;
+}
+.about:hover, .projects:hover, .contact:hover {
     transition: border-bottom-color .2s ease-in;
     border-bottom: solid 1px black;
 }
-.window_small a:hover {
-    transition: border-bottom-color .2s ease-in;
-    border-bottom: solid 1px black;
+.icon:hover{
+    cursor: pointer;
+}
+
+/*style for the step animation*/
+.steps{
+    position:relative;
+    top:25%;
+    width:100%;
+}
+.steps p{
+    font-size:18px;
+    position:relative;
+    width:40%;
+    margin-top:2%;
+    font-family:sans-serif;
+}
+#s0{
+    left:20%;
+    text-shadow: 5px 5px 15px #fe0000, -5px -5px 15px #fe0000;
+}
+#s1{
+    left:29%;
+    text-shadow: 5px 5px 15px #f09600, -5px -5px 15px #f09600;
+}
+#s2{
+    left:40%;
+    text-shadow: 5px 5px 15px #55c149, -5px -5px 15px #55c149;
+}
+#s3{
+    left:50%;
+    text-shadow: 5px 5px 15px #00b1f3, -5px -5px 15px #00b1f3;
+}
+
+/*style for first intro*/
+.intro{
+    position:fixed;
+    top:15%;
+    width:100%;
+    height:70%;
+    background-color: rgba(214, 209, 145, 0.27);
+}
+/*
+.bigicon{
+    position:relative;
+    width: 300px;
+    height:300px;
+    left:50%;
+    margin-left:-150px;
+    top:30%;
+    margin-top:-150px;
+}
+
+.icon{
+    position:absolute;
+    left:50%;
+    margin-left: -80px;
+    top:50%;
+    margin-top:-80px;
+    opacity: 0;
+    animation: 2s fadein;
+    animation-delay: 1s;
+    animation-fill-mode:forwards;
+}
+
+p#s1, p#s2, p#s3{
+    position:relative;
+    font-size:20px;
+    }
+
+p#s1{
+    top: 68%;
+    left: 90%;
+    color: #0030ff;
+    font-weight: 900;
+    font-family: Stencil Std;
+}
+p#s2{
+    top: -1%;
+    left: 59%;
+    color: #ff4104;
+    font-family: cursive;
+    font-weight: 900;
+}
+p#s3{
+    top:61%;
+    left:11%;
+    color:#2E2B05;
+    font-family: courier;
+    font-weight: 900;
+}
+*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
