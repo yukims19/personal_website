@@ -3,13 +3,21 @@ body{
     animation-fill-mode:forwards;
     font-family: Comic Sans MS;
 }
+.main{
+    background-color: rgba(160, 160, 162, 0.98);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 5%;
+    margin-left: 140px;
+    opacity:0;
+}
 .window_big {
-    width:25%;
+    width:100%;
+    height:30px;
     min-width:320px;
-    position: fixed;
-    top:5%;
-    right: 10px;
-    max-width: 760px;
+    position: relative;
 }
 
 /* Style the links inside the navigation bar */
@@ -21,35 +29,50 @@ body{
     width:80px;
     height:80px;
     margin-top:-40px;
-    opacity:0./*
-    animation: 0.5s fadein;
-    animation-delay: 1.5s;
-    animation-fill-mode:forwards;*/
+    position:absolute;
+    left:30%;
 }
-.window_big a {
+
+.home{
     float: left;
-    display: block;
+    margin-left:10%;
+}
+.menu{
+    position:fixed;
+    width:140px;
+    height:55px;
+    top:8%;
+    left:2%;
+    z-index:1;
+    background-color:white;
+}
+.menu a, .menu p{
     color: black;
     text-align: center;
     text-decoration: none;
     font-size: 23px;
     padding-left: 5px;
     padding-right: 5px;
-
-    margin-right:5%;
+    margin-top:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    display: block;
+    background-color: white;
     border-bottom: solid 1px transparent;
-    font-family: lucida grande;
-
 }
-
-
-.menu{
-    float: right;
-    margin-top:-25px;
+.menu p{
+    margin:0px;
+    color:white;
+}
+.about, .projects, .contact{
+    opacity:0;
+    visibility:hidden;
 }
 .about:hover, .projects:hover, .contact:hover {
-    transition: border-bottom-color .2s ease-in;
     border-bottom: solid 1px black;
+    transition: all 1s ease-in-out;
+    opacity:0.5;
+    //background-color: red;
 }
 .icon:hover{
     cursor: pointer;
@@ -62,9 +85,7 @@ body{
     width:100%;
     height:40%;
     min-height:280px;
- //   background-image: url('page_icon2.png');
     background-size: 100% 100%;
-    background-color: rgba(214, 209, 145, 0.27);
 }
 h1{
     text-align: center;
@@ -73,14 +94,13 @@ h1{
 }
 .intro h2{
     position:relative;
-    left: 15%;
+    left: 20%;
     margin-bottom: 0px;
 }
 .love3{
- //   position:fixed;
     text-align: center;
     font-size:2em;
-    width:80%;
+    width:100%;
     height:50%;
 }
 .flipcard:hover{
@@ -90,7 +110,8 @@ h1{
 .flipcard{
     position:relative;
     height:30%;
-    width:100%;
+    width:45%;
+    left:27.5%;
     margin-bottom:25px;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
