@@ -89,30 +89,31 @@
     width:40%;
     margin-top:16px;
     font-family:sans-serif;
-  }
+}
+/*
 #s0{
 //    padding-left:200px;
     text-shadow: 5px 5px 15px #fe0000, -5px -5px 15px #fe0000;
-    animation:1.8s s0;
+//    animation:1.8s s0;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}
+}*/
 #s1{
-    padding-left:100px;
+//    padding-left:100px;
     text-shadow: 5px 5px 15px #f09600, -5px -5px 15px #f09600;
     animation:1.8s s1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 #s2{
-    padding-left:200px;
+    padding-left:100px;
     text-shadow: 5px 5px 15px #55c149, -5px -5px 15px #55c149;
     animation:1.8s s2;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 #s3{
-    padding-left:300px;
+    padding-left:200px;
     text-shadow: 5px 5px 15px #00b1f3, -5px -5px 15px #00b1f3;
     animation:1.8s s3;
     animation-timing-function: ease-in-out;
