@@ -4,7 +4,7 @@
     max-width: 880px;
     top:20%;
     left:20%;
-    position:relative;
+    position:absolute;
 }
 .small_display .unit{
     width:200px;
@@ -32,24 +32,123 @@
     border-radius: 30%;
     cursor: pointer;
 }
+
+/* main big display*/
+h1{
+    width:50%;
+    left:25%;
+    visibility:hidden;
+    opacity:0;
+//    display:none;
+}
+.main_project{
+//    border: 1px solid;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 10%;
+    visibility:hidden;
+    opacity:0;
+ //   display:none;
+}
+.photo_des{
+    position:absolute;
+    border: 1px solid;
+    height:90%;
+    width:50%;
+    left:5%;
+    top:5%;
+    overflow:scroll;
+}
+
+#description{
+    position:relative;
+    width:35%;
+    height:80%;
+    top:10%;
+    left:60%;
+    font-size:20px;
+    overflow:scroll;
+    margin:0px;
+
+}
+/*
+.big{
+    height:90%;
+    min-height:800px;
+    position:relative;
+    top:10%;
+    margin-top:40px;
+}
+.big h1{
+    position:relative;
+    width:50%;
+    left:25%;
+    top:5px;
+    text-align:center;
+}
+
+
+/*below bar of projects*/
 .big_display{
     width:60%;
-    height:50px;
-    position:absolute;
-    bottom:20%;
+    height:5%;
+    position:relative;
+    top:15%;
     left:20%;
 //    border: 1px solid;
     text-align:center;
 }
 .big_display .unit{
-    width:50px;
-    height:50px;
+//    width:50px;
+    height:100%;
     display:inline-block;
 }
 .big_display .unit .rap img{
-    width:50px;
-    height:50px;
+//    width:50px;
+    height:100%;
 }
-.big_display .unit .rap li{
-    visibility: hidden;
+#arrow{
+    height:150%;
+    visibility:hidden;
+    opacity:0;
 }
+#arrow img{
+    height:100%;
+    cursor:pointer;
+}
+
+/*main project display*/
+/*
+.big_project{
+    border:1px solid;
+    height:70%;
+    min-height:350px;
+//    top:20%;
+    position:relative;
+}
+.big_unit{
+    border:1px solid;
+    width:80%;
+    height:100%;
+    position:relative;
+    left:10%;
+    display:inline-block;
+    margin:auto;
+    text-align:center;
+}
+.big_unit .image{
+    height:100%;
+    width:100%;
+    display:inline-block;
+    margin:auto;
+    filter:grayscale(50%);
+    overflow:scroll;
+}
+
+.big_unit p{
+    position:absolute;
+    bottom:5%;
+    text-align:left;
+    left:50%;
+}*/

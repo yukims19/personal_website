@@ -8,57 +8,91 @@
 
     <body>
 
-        <!-- Main display of projects-->
-            <div id="display" class="small_display">
-                <div class="unit">
-                    <div class="rap">
-                        <li> ID Verification </li>
-                        <img src="./img/id_verification.jpeg"/>
-                    </div>
-                </div>
-
-                <div class="unit">
-                    <div class="rap">
-                        <li>Photo Gallery</li>
-                        <img src="./img/photo_gallery.png"/>
-                    </div>
-                </div>
-
-                <div class="unit">
-                    <div class="rap">
-                        <li>Web Chat</li>
-                    </div>
-                </div>
-
-                <div class="unit">
-                    <div class="rap">
-                        <li>BigBelly Analysis</li>
-                        <img src="./img/bigbelly.jpg"/>
-                    </div>
-                </div>
-
-                <div class="unit">
-                    <div class="rap">
-                        <li>Car-eating Game</li>
-                        <img src="./img/careating.png"/>
-                    </div>
-                </div>
-
-                <div class="unit">
-                    <div class="rap">
-                        <li>Keylock</li>
-                        <img src="./img/keylock.png"/>
-                    </div>
-                </div>
-
-                <div class="unit">
-                    <div class="rap">
-                        <li>Lamp</li>
-                        <img src="./img/lamp.jpeg"/>
-                    </div>
-                </div>
-
+        <!-- Main display of projects when .big_display-->
+        <!-- -
+             <h1 class="main_id_verification">ID VERIFICATION</h1>
+             <div class ="main_project main_id_verification">
+             <div class="photo_des">
+             <img src="./img/id_verification.jpeg" alt="id verification" style="width:100%"/>
+             </div>
+             <p id="description">Technic: Clojure<br/>
+             Purpose: Summer Internship Project<br>
+             Function: Display pictures in original ratio; provide options of display sizes<br/>
+             Design schetch: hereherehreh<br>
+             Github link: herehrehre
+             </p>
+             </div>
+           -->
+        <h1 id="main_title">PHOTO GALLERY</h1>
+        <div class ="main_project">
+            <div class="photo_des">
+                <img id="main_img" src="./img/photo_gallery.png" alt="photo gallery" style="width:100%"/>
             </div>
+            <p id="description">Technic: React<br/>
+                Purpose: To get first touch of React<br>
+                Function: Display pictures in original ratio; provide options of display sizes<br/>
+                Design schetch: hereherehreh<br>
+                Github link: herehrehre
+            </p>
+        </div>
+
+
+        <!-- Display of all projects-->
+        <div id="display" class="small_display">
+            <div class="unit">
+                <div class="rap">
+                    <li> ID Verification </li>
+                    <img id ="id_verification" src="./img/id_verification.jpeg"/>
+                </div>
+            </div>
+
+            <div class="unit">
+                <div class="rap">
+                    <li>Photo Gallery</li>
+                    <img id="photo_gallery" src="./img/photo_gallery.png"/>
+                </div>
+            </div>
+
+            <div class="unit">
+                <div class="rap">
+                    <li>Web Chat</li>
+                    <img id="web_chat" src="./img/photo_gallery.png"/>
+                </div>
+            </div>
+
+            <div class="unit">
+                <div class="rap">
+                    <li>BigBelly Analysis</li>
+                    <img id="bigbelly" src="./img/bigbelly.jpg"/>
+                </div>
+            </div>
+
+            <div class="unit">
+                <div class="rap">
+                    <li>Car-eating Game</li>
+                    <img id="car_eating" src="./img/careating.png"/>
+                </div>
+            </div>
+
+            <div class="unit">
+                <div class="rap">
+                    <li>Keylock</li>
+                    <img id="keylock" src="./img/keylock.png"/>
+                </div>
+            </div>
+
+            <div class="unit">
+                <div class="rap">
+                    <li>Lamp</li>
+                    <img id="lamp" src="./img/lamp.jpeg"/>
+                </div>
+            </div>
+
+            <div id="arrow" class="unit">
+                <img id="lamp" src="./img/arrow2.png"/>
+            </div>
+
+        </div>
 
         <!-- Menu bar -->
         <div id="nav" class="window_big">
@@ -76,6 +110,5 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src ="./js/home.js"></script>
-
-    </body>
+     </body>
 </html>
