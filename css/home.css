@@ -148,7 +148,7 @@ h1{
     left:3%;
     min-width:75px;
 }
-.window_small a {
+.window_small a, .window_small p, .window_small img {
     /*    display: block;
     color: black;
     text-align: center;
