@@ -2,7 +2,7 @@
     height:10px;
     width:80%;
     max-width: 880px;
-    top:20%;
+    top:25%;
     left:20%;
     position:absolute;
 }
@@ -37,8 +37,8 @@
 h1{
     width:50%;
     left:25%;
-    visibility:hidden;
-    opacity:0;
+  //  visibility:hidden;
+//    opacity:0;
 //    display:none;
 }
 .main_project{
