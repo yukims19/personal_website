@@ -74,8 +74,7 @@ const main = function(){
 
 
     $('.small_display .rap img').click(function(){
-        $(this).data('clicked',true);
-
+        let clicked=$(this).attr('id');
        //smooth transition from small to big
         $(".small_display").animate({top:"+=60%",
                                      opacity:"0"},
@@ -93,38 +92,51 @@ const main = function(){
         $('h1').fadeTo(400,1);
         $('.main_project').css('visibility','visible');
         $('.main_project').fadeTo(400,1);
-        $(this).css('padding-bottom','10px');
+
 // change contents depend on clicked project
-        if($('#photo_gallery').data('clicked')){
+        if('photo_gallery' == clicked){
             $('#main_title').text("PHOTO GALLERY");
             $('#main_img').attr("src","./img/photo_gallery.png");
-        }else if($('#id_verification').data('clicked')){
+            $('.rap img').css('padding-bottom','0px');
+            $('#photo_gallery').css('padding-bottom','10px');
+        }else if("id_verification" == clicked){
             $('#main_title').text("ID_VERIFICATION");
             $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
             $('#main_img').attr("src","./img/id_verification.jpeg");
-        }else if($('#web_chat').data('clicked')){
+            $('.rap img').css('padding-bottom','0px');
+            $('#id_verification').css('padding-bottom','10px');
+        }else if('web_chat' == clicked){
             $('#main_title').text("WEB CHAT");
             $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
             $('#main_img').attr("src","");
-        }else if($('#bigbelly').data('clicked')){
+            $('.rap img').css('padding-bottom','0px');
+            $('#web_chat').css('padding-bottom','10px');
+        }else if('bigbelly' == clicked){
             $('#main_title').text("BIGBELLY ANALYSIS");
             $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
             $('#main_img').attr("src","./img/bigbelly.jpg");
-        }else if($('#car_eating').data('clicked')){
+            $('.rap img').css('padding-bottom','0px');
+            $('#bigbelly').css('padding-bottom','10px');
+        }else if('car_eating' == clicked){
             $('#main_title').text("CAR-EATING GAME");
             $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
             $('#main_img').attr("src","./img/careating.png");
-        }else if($('#keylock').data('clicked')){
+            $('.rap img').css('padding-bottom','0px');
+            $('#car_eating').css('padding-bottom','10px');
+        }else if('keylock' == clicked){
             $('#main_title').text("KEYLOCK");
             $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
             $('#main_img').attr("src","./img/keylock.png");
-        }else if($('#lamp').data('clicked')){
+            $('.rap img').css('padding-bottom','0px');
+            $('#keylock').css('padding-bottom','10px');
+        }else if('lamp' == clicked){
             $('#main_title').text("LAMP");
             $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
             $('#main_img').attr("src","./img/lamp.jpeg");
+            $('.rap img').css('padding-bottom','0px');
+            $('#lamp').css('padding-bottom','10px');
         }
-
-    });
+          });
 
     $(document).on('mouseover','.big_display ',(function(){
         $('#arrow').css('visibility','visible');
@@ -144,9 +156,10 @@ const main = function(){
         $(".rap li").css('display','block');
         $('.rap').css('opacity','1');
         $('.main_project').fadeTo(400,0);
-        $('h1').fadeTo(400,0);
+//        $('h1').fadeTo(400,0);
         $('.main_project').css('visibility','hidden');
-        $('h1').css('visibility','hidden');
+        //        $('h1').css('visibility','hidden');
+        $('h1').text("PROJECTS");
 
         $("#display").animate({top:"-=60%",
                                      opacity:"0"},
@@ -161,7 +174,6 @@ const main = function(){
         setTimeout(function(){
             $('#display').addClass("small_display");
         },300);
-
     });
 };
 
