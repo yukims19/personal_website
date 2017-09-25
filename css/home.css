@@ -67,10 +67,13 @@ body{
 .about, .projects, .contact{
     opacity:0;
     visibility:hidden;
+    border-radius:10px;
 }
 .about:hover, .projects:hover, .contact:hover {
-    border-bottom: solid 1px black;
-    transition: all 1s ease-in-out;
+//    border-bottom: solid 1px black;
+    color:#9c9898;
+    background-color:#ece9e9;
+    transition: all 0.3s ease-in-out;
     opacity:0.5;
     //background-color: red;
 }
