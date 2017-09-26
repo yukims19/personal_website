@@ -95,44 +95,69 @@ const main = function(){
 
 // change contents depend on clicked project
         if('photo_gallery' == clicked){
+            $('.photo_des img').remove();
+            $('.photo_des video').remove();
             $('#main_title').text("PHOTO GALLERY");
-            $('#main_img').attr("src","./img/photo_gallery.png");
+            //            $('#main_img').attr("src","./img/photo_gallery.png");
+            $('.photo_des').append('<img src=./img/gallery1.png />');
+            $('.photo_des').append('<img src=./img/gallery2.png />');
+            $('.photo_des').append('<img src=./img/gallery3.png />');
+            $('.photo_des').append('<img src=./img/gallery4.png />');
+            $('.photo_des').append('<img src=./img/gallery5.png />');
             $('.rap img').css('padding-bottom','0px');
             $('#photo_gallery').css('padding-bottom','10px');
         }else if("id_verification" == clicked){
+            $('.photo_des img').remove();
+            $('.photo_des video').remove();
             $('#main_title').text("ID_VERIFICATION");
-            $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
-            $('#main_img').attr("src","./img/id_verification.jpeg");
+            $('#description').html("Used: Clojure, Emacs<br/>Purpose: Internship Project<br/> Function: Customers are able to upload id pictures to Amazon S3 as encrypted files, and administrators (with special password) are able to verify the id by seeing the id pictures customer's other information, which was stored in database.");
+            //            $('#main_img').attr("src","./img/id_verification.jpeg");
+            $('.photo_des').append("<img class='only' src=./img/id_verification.jpeg />");
             $('.rap img').css('padding-bottom','0px');
             $('#id_verification').css('padding-bottom','10px');
         }else if('web_chat' == clicked){
+            $('.photo_des img').remove();
+            $('.photo_des video').remove();
             $('#main_title').text("WEB CHAT");
-            $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
-            $('#main_img').attr("src","");
+            $('#description').html("Used: PHP, HTML, CSS, MySQL <br/>Purpose: Build my first web app<br/> Function: 1. Chat box - able to chat via text. Data will be stored but box dialog will renew everyday. (able to view past records). 2. Diary box - Be able to store text & image. Users can access to private diary box via login.<br/> Design sketch: <a href='https://precursorapp.com/document/Untitled-17592205940058' target='_blank'>here</a> <br/> Github link: <a href='https://github.com/yukims19/web_apps/tree/master/LVchat' target='_blank'>here</a> <br/> Status: In-progress");
+            $('.photo_des').append('<img class=only src=./img/lvchat.png />');
             $('.rap img').css('padding-bottom','0px');
             $('#web_chat').css('padding-bottom','10px');
         }else if('bigbelly' == clicked){
+            $('.photo_des img').remove();
+            $('.photo_des video').remove();
             $('#main_title').text("BIGBELLY ANALYSIS");
-            $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
-            $('#main_img').attr("src","./img/bigbelly.jpg");
+            $('#description').html("Conducted design analysis on BigBelly trash-can and brainstormed it's redesign ideas.<br/> For details: <a href='https://www.youtube.com/watch?v=bzKYEfCGzAE' target='_blank'>here</a> ");
+//            $('#main_img').attr("src","./img/bigbelly.jpg");
+//            $('.photo_des').append('<img class=only src=./img/bigbelly.jpg />');
+            $('.photo_des').append('<video class=video_bigbelly controls=controls  src=./img/bigbelly.mp4 type=video/mp4></video>');
             $('.rap img').css('padding-bottom','0px');
             $('#bigbelly').css('padding-bottom','10px');
         }else if('car_eating' == clicked){
+            $('.photo_des img').remove();
+            $('.photo_des video').remove();
             $('#main_title').text("CAR-EATING GAME");
-            $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
-            $('#main_img').attr("src","./img/careating.png");
+            $('#description').html("Used: Java <br/>Purpose: In-class project<br/> Function: Able to use arrow keys to control car's(blue) direction");
+//            $('#main_img').attr("src","./img/careating.png");
+            $('.photo_des').append('<img class=only src=./img/careating.png />');
             $('.rap img').css('padding-bottom','0px');
             $('#car_eating').css('padding-bottom','10px');
         }else if('keylock' == clicked){
+            $('.photo_des img').remove();
+            $('.photo_des video').remove();
             $('#main_title').text("KEYLOCK");
-            $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
-            $('#main_img').attr("src","./img/keylock.png");
+            $('#description').html("Used: Python, Raspberry Pi, Twillio, soldering<br/>Purpose: For fun <br/>Function: Open the apartment door by texting, instead of pressing the button.");
+//            $('.photo_des').append('<img class=only src=./img/keylock.png />');
+            $('.photo_des').append('<video class= video_keylock controls=controls  src=./img/keylock.mp4 type=video/mp4></video>');
             $('.rap img').css('padding-bottom','0px');
             $('#keylock').css('padding-bottom','10px');
         }else if('lamp' == clicked){
+            $('.photo_des img').remove();
+            $('.photo_des video').remove();
             $('#main_title').text("LAMP");
-            $('#description').html("Technic: Clojure <br/> Purpose:  Summer Internship Project <br/> Function:  Display pictures in original ratio; provide options of display sizes<br/> Design sketch: hereherehreh <br/> Github link: herehrehre");
-            $('#main_img').attr("src","./img/lamp.jpeg");
+            $('#description').html("Used: Laser cutter, Inkscape <br/>Purpose: For fun");
+//            $('#main_img').attr("src","./img/lamp.jpeg");
+            $('.photo_des').append('<img class=only src=./img/lamp.jpeg />');
             $('.rap img').css('padding-bottom','0px');
             $('#lamp').css('padding-bottom','10px');
         }

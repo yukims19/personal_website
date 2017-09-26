@@ -53,12 +53,32 @@ h1{
 }
 .photo_des{
     position:absolute;
-    border: 1px solid;
+//    border: 1px solid;
     height:90%;
     width:50%;
     left:5%;
     top:5%;
     overflow:scroll;
+    text-align:center;
+}
+.photo_des .only{
+    width:100%;
+    padding:0px;
+}
+.photo_des img{
+    width:46%;
+    float:left;
+    padding:1%;
+}
+.photo_des video{
+    position:relative;
+    z-index:2;
+}
+.photo_des .video_bigbelly{
+    width:100%;
+}
+.photo_des .video_keylock{
+    height:100%;
 }
 
 #description{
@@ -94,10 +114,11 @@ h1{
     width:60%;
     height:5%;
     position:relative;
-    top:15%;
+    top:10%;
     left:20%;
 //    border: 1px solid;
-    text-align:center;
+text-align:center;
+cursor:pointer;
 }
 .big_display .unit{
 //    width:50px;
