@@ -1,4 +1,4 @@
-h2, .social_icon, .wechat{
+h2, .social_icon, .wechat, .line{
     position:relative;
     top:20%;
     text-align:center;
@@ -9,9 +9,22 @@ h2, .social_icon, .wechat{
     margin:5px;
     cursor:pointer;
 }
-.wechat p{
+.wechat, .line{
+//    opacity:0;
+    display:none;
+}
+.wechat p, .line p{
     font-size:18px;
 }
-.wechat img{
+.wechat img, .line img{
     width:25%;
+}
+.box{
+    border:1px solid;
+}
+.one{
+    border:1px solid;
+}
+.two{
+    border:1px solid;
 }
