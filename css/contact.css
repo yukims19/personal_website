@@ -1,0 +1,17 @@
+h2, .social_icon, .wechat{
+    position:relative;
+    top:20%;
+    text-align:center;
+}
+.social_icon img{
+    width:50px;
+    padding:5px;
+    margin:5px;
+    cursor:pointer;
+}
+.wechat p{
+    font-size:18px;
+}
+.wechat img{
+    width:25%;
+}
