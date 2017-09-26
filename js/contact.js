@@ -26,6 +26,8 @@ const main = function(){
         $('.about, .projects, .contact').css('visibility','visible');
         $('.about, .projects, .contact').fadeTo(200, 1);
         $('.menu').css('height','265px');
+        $('h2').fadeTo(200,0.3);
+        $('.social').fadeTo(200,0.3);
     });
     $('.menu').mouseleave(function(){
         $('h1').fadeTo(200,1);
@@ -36,6 +38,8 @@ const main = function(){
         //       $('.menu').fadeOut(200);
         $('.about, .projects, .contact').fadeTo(200, 0);
         $('.about, .projects, .contact').css('visibility','hidden');
+        $('h2').fadeTo(200,1);
+        $('.social').fadeTo(200,1);
     });
     //when click on icon, go index.html
     $('.home').click(function(){
